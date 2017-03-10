@@ -1,0 +1,3 @@
+#! /bin/sh
+
+cd `dirname $0`/.. && cp config/config.example.json config/config.json && sudo cp dummy /etc/init.d/dummy && sudo chmod +x /etc/init.d/dummy && sudo chkconfig dummy on && cd -

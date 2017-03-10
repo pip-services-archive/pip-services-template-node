@@ -1,0 +1,3 @@
+#! /bin/sh
+
+cd `dirname $0`/.. && docker run -i -t --rm -p 8001:8001 -p 8801:8801 pip-services-template-node-1.0.0 && cd -
